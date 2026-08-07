@@ -1,0 +1,84 @@
+# oriz Play — full content
+
+> Creative-play studio that runs entirely in your browser. 100% client-side — no upload, no signup, no tracking. Live at https://play.oriz.in
+
+## What it is
+
+oriz Play is a free creative-play studio that runs entirely in your web browser. Roll story dice, spin a writing-prompt roller, and play would-you-rather and this-or-that — then expand any roll into a vivid story opening with optional AI, and share the result by link. There is no backend, no account, and no API key. Every roll happens locally via Web Crypto randomness; the only network calls are the optional AI completions you trigger, routed through keyless g4f multi-provider gateways. If AI is down, the dice still roll.
+
+## Hero
+
+Roll a story into being. Story dice, prompt rollers, would-you-rather and this-or-that — spun in your browser, expandable by AI, shareable by link.
+
+## Features
+
+### Story Dice
+Roll 1 to 9 categorized dice — Character, Setting, Object, Goal, Obstacle, Mood, Twist, Sense, Wildcard. Each die shows one face per roll, rendered as physical 3D-ish CSS dice with a tumble-and-settle animation. The faces combine into ingredients for a scene (for example: a weary knight, a storm-battered lighthouse, a key with no lock).
+
+### Prompt Roller
+Recombines opener, subject and turn fragments into a single-line writing prompt (for example: "Write about the last lighthouse keeper on Earth until a letter arrives.").
+
+### Would You Rather
+Impossible dilemmas presented as either/or choices to spark a story (for example: relive the same great day forever, or live every day new but forget it by night).
+
+### This or That
+Quickfire either/or picks (Mountains or Ocean, Sunrise or Sunset, Coffee or Tea, and more).
+
+### Expand with AI
+Fuse any roll into one evocative story opening (a 60-110 word paragraph) via @chirag127/oz-ai, a keyless g4f multi-provider client with automatic failover. Optional polish, not required for play.
+
+### Fresh prompt pack
+Generate five brand-new one-line writing prompts on any theme you type (AI, optional).
+
+### Share by link
+Copy the result text, or a compressed permalink (#r=... encoded with LZ-string) that reconstructs the exact roll on open. Recent rolls are kept in a local history.
+
+### Accessible + fast
+Keyboard-accessible, reduced-motion aware, WCAG-AA contrast. Zero heavy dependencies; AI libraries load only when you trigger an AI feature.
+
+## How to use
+
+1. Open https://play.oriz.in in any modern browser.
+2. Choose a mode: Story Dice, Prompt Roller, Would You Rather, or This or That.
+3. For Story Dice, set the number of dice (1-9) and the categories, then hit Roll.
+4. Read the rolled ingredients, prompt, or dilemma.
+5. Optionally hit "Expand with AI" to fuse the roll into a story opening.
+6. Optionally generate a "Fresh prompt pack" of five prompts on any theme.
+7. Copy the result text or share a compressed permalink that rebuilds the exact roll.
+8. Browse your recent rolls from the local history.
+
+## Privacy
+
+100% client-side. No backend, no accounts, no telemetry. Every roll happens in your browser using Web Crypto randomness (with a Math.random fallback). Shared links encode only the roll in the URL fragment — never sent to any server. The only network calls are the optional AI completions you initiate, routed through g4f providers. History stays on your device.
+
+## Tech
+
+- Astro (static output), client-only React 19 islands, Tailwind CSS v4 (@tailwindcss/vite).
+- AI via @chirag127/oz-ai — a g4f multi-provider browser client, keyless, with automatic failover.
+- Randomness via Web Crypto with a Math.random fallback.
+- Share codec via lz-string (compressed URL fragment).
+- Installable PWA (offline shell + runtime caching).
+- Shared atomic @chirag127/* packages (oz-ai, oz-file, oz-tokens-base, oz-chrome) for mechanism only; the visual theme is bespoke to this site.
+
+## FAQ
+
+Is it free? Yes, completely free. No signup, no API key, no card.
+
+Do you store my rolls? No. Rolls happen in your browser and history stays on your device. Nothing is uploaded.
+
+Do I need an account? No. There is no auth on this free tool.
+
+Do I need AI to play? No. Dice, prompts, would-you-rather and this-or-that all work with no network. AI expansion is optional polish.
+
+Can I use it offline? The app shell is a PWA and installs/caches offline. AI expansion needs a network connection to reach a provider.
+
+How does sharing work? A share link encodes only the roll in the URL fragment (#r=... via LZ-string). Opening it rebuilds the exact roll locally; nothing is sent to a server.
+
+## Links
+
+- Live app: https://play.oriz.in
+- Info page: https://chirag127.github.io/oriz-play/
+- Source: https://github.com/chirag127/oriz-story-dice
+- More oriz.in tools: https://oriz.in
+
+MIT © 2026 Chirag Singhal

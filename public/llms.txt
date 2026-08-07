@@ -1,0 +1,24 @@
+# oriz Play
+
+> Creative-play studio that runs entirely in your browser: roll story dice, spin a writing-prompt roller, play would-you-rather and this-or-that, then expand any roll into a story seed with AI and share it by link. 100% client-side — no upload, no signup, no tracking.
+
+## App
+
+- [Live app](https://play.oriz.in): the creative-play studio — roll, spin, choose, expand with AI, share by link, all in-browser.
+- [llms-full.txt](https://play.oriz.in/llms-full.txt): full plain-text content of the site for LLM ingestion.
+
+## Features
+
+- [Story Dice](https://play.oriz.in): roll 1-9 categorized dice (Character, Setting, Object, Goal, Obstacle, Mood, Twist, Sense, Wildcard) into scene ingredients.
+- [Prompt Roller](https://play.oriz.in): recombine fragments into a single-line writing prompt.
+- [Would You Rather](https://play.oriz.in): impossible dilemmas to spark a story.
+- [This or That](https://play.oriz.in): quickfire either/or picks.
+- [Expand with AI](https://play.oriz.in): fuse any roll into a vivid story opening via keyless g4f multi-provider AI.
+- [Fresh prompt pack](https://play.oriz.in): generate five brand-new prompts on any theme.
+- [Share by link](https://play.oriz.in): copy the result or a compressed permalink that rebuilds the exact roll.
+
+## About
+
+- [Info page](https://chirag127.github.io/oriz-play/): what oriz Play is, how it works, tech stack.
+- [Source](https://github.com/chirag127/oriz-story-dice): MIT-licensed source on GitHub.
+- [More oriz.in tools](https://oriz.in): the rest of the free oriz.in tool suite.
