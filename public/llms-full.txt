@@ -77,7 +77,7 @@ How does sharing work? A share link encodes only the roll in the URL fragment (#
 ## Links
 
 - Live app: https://play.oriz.in
-- Info page: https://chirag127.github.io/oriz-play/
+- Info page: https://chirag127.github.io/oriz-story-dice/
 - Source: https://github.com/chirag127/oriz-story-dice
 - More oriz.in tools: https://oriz.in
 

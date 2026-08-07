@@ -1,7 +1,7 @@
 # oriz Play
 
 - **Live app:** https://play.oriz.in
-- **About / info:** https://chirag127.github.io/oriz-play/
+- **About / info:** https://chirag127.github.io/oriz-story-dice/
 - **llms.txt:** https://play.oriz.in/llms.txt
 
 Creative-play studio: roll **story dice**, spin a **writing-prompt roller**, play **would-you-rather** and **this-or-that** — then expand any roll into a story seed with AI, and share the result by link.

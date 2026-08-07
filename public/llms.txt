@@ -19,6 +19,6 @@
 
 ## About
 
-- [Info page](https://chirag127.github.io/oriz-play/): what oriz Play is, how it works, tech stack.
+- [Info page](https://chirag127.github.io/oriz-story-dice/): what oriz Play is, how it works, tech stack.
 - [Source](https://github.com/chirag127/oriz-story-dice): MIT-licensed source on GitHub.
 - [More oriz.in tools](https://oriz.in): the rest of the free oriz.in tool suite.
