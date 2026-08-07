@@ -1,0 +1,42 @@
+{
+  "name": "oriz-story-dice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Creative play — story dice, writing-prompt roller, would-you-rather, this-or-that. AI-expandable, shareable, 100% client-side.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "deploy": "astro build && wrangler pages deploy dist --project-name oriz-play --branch main --commit-dirty=true"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.0",
+    "@astrojs/sitemap": "^3.6.0",
+    "@chirag127/oz-ai": "file:../design-system/packages/oz-ai",
+    "@chirag127/oz-chrome": "file:../design-system/packages/oz-chrome",
+    "@chirag127/oz-file": "file:../design-system/packages/oz-file",
+    "@chirag127/oz-tokens-base": "file:../design-system/packages/oz-tokens-base",
+    "@fontsource-variable/fraunces": "^5.2.5",
+    "@fontsource-variable/inter": "^5.2.5",
+    "@tailwindcss/vite": "^4.1.0",
+    "astro": "^6.4.8",
+    "lz-string": "^1.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "jsdom": "^25.0.1",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.42.0"
+  }
+}

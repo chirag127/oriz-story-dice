@@ -1,0 +1,41 @@
+---
+import OzToolShell from '@chirag127/oz-chrome/components/OzToolShell.astro'
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+}
+const {
+  title = 'Story Dice — creative play',
+  description = 'Roll story dice, spin writing prompts, would-you-rather and this-or-that. AI-expandable. 100% client-side, no signup.',
+} = Astro.props
+const canonical = new URL(Astro.url.pathname, Astro.site).toString()
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#c9a24b" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <OzToolShell site="play" title="Story Dice" wordmarkHref="https://oriz.in" themeColor="#c9a24b">
+      <a slot="footer" href="https://github.com/chirag127/oriz-story-dice" rel="noopener">Source</a>
+      <div class="wrap">
+        <slot />
+      </div>
+    </OzToolShell>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro'
+import PlayStudio from '../components/PlayStudio.tsx'
+---
+
+<Base>
+  <PlayStudio client:load />
+
+  <section style="margin-top:3rem;text-align:center;color:var(--oz-muted);font-size:0.9rem;">
+    <p>
+      100% client-side. Every roll happens in your browser — nothing is uploaded, no account, no tracking. AI
+      expansion is optional polish via a keyless multi-provider gateway; if it’s down, the dice still roll.
+    </p>
+  </section>
+</Base>
