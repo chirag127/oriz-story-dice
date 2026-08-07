@@ -6,10 +6,34 @@ import PlayStudio from '../components/PlayStudio.tsx'
 <Base>
   <PlayStudio client:load />
 
-  <section style="margin-top:3rem;text-align:center;color:var(--oz-muted);font-size:0.9rem;">
+  <section class="about">
+    <h2>What is oriz Story Dice?</h2>
     <p>
-      100% client-side. Every roll happens in your browser — nothing is uploaded, no account, no tracking. AI
-      expansion is optional polish via a keyless multi-provider gateway; if it’s down, the dice still roll.
+      A free creative-writing idea generator. Roll <strong>story dice</strong> to fuse a character, setting and
+      object into a scene; spin a one-line <strong>writing prompt</strong>; settle a
+      <strong>would-you-rather</strong> dilemma or a quickfire <strong>this-or-that</strong>. Optional AI turns any
+      roll into a full story seed. Every roll runs in your browser — nothing is uploaded, no account, no tracking.
+      If the AI gateway is down, the dice still roll.
     </p>
   </section>
 </Base>
+
+<style>
+  .about {
+    max-width: 42rem;
+    margin: var(--oz-space-8) auto 0;
+    text-align: center;
+    color: var(--oz-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .about h2 {
+    font-size: 1.15rem;
+    color: var(--ivory);
+    margin: 0 0 var(--oz-space-3);
+  }
+  .about strong {
+    color: var(--brass-hi);
+    font-weight: 600;
+  }
+</style>
