@@ -14,7 +14,7 @@
     "preview": "astro preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "deploy": "astro build && wrangler pages deploy dist --project-name oriz-play --branch main --commit-dirty=true"
+    "deploy": "astro build && wrangler pages deploy dist --project-name oriz-story-dice --branch main --commit-dirty=true"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
