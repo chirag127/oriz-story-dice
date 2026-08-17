@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Creative play — story dice, writing-prompt roller, would-you-rather, this-or-that. AI-expandable, shareable, 100% client-side.",
+  "description": "Creative play \u2014 story dice, writing-prompt roller, would-you-rather, this-or-that. AI-expandable, shareable, 100% client-side.",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -19,7 +19,7 @@
   "dependencies": {
     "@astrojs/react": "^4.4.0",
     "@astrojs/sitemap": "^3.6.0",
-    "@chirag127/oz-ai": "^0.3.1",
+    "@chirag127/oz-ai": "^0.3.3",
     "@chirag127/oz-chrome": "^0.1.0",
     "@chirag127/oz-file": "^0.1.0",
     "@chirag127/oz-tokens-base": "^0.1.0",
